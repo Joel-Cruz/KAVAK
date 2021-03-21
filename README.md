@@ -76,12 +76,12 @@ _Proximamente Azure Devops
 
 ## Autores ✒️
 Desarrolladores Back-End
-Zaldivar Rodriguez Angel Eduardo
-Joel Aldecua 
+* Zaldivar Rodriguez Angel Eduardo
+* Joel Aldecua 
 
 Desarrolladores Front-End
-Mauricio de Leon Mercado
-Jose Manuel Cazan Segura
-Saulo Jesus Sanchez Dzul 
+* Mauricio de Leon Mercado
+* Jose Manuel Cazan Segura
+* Saulo Jesus Sanchez Dzul 
 
 
