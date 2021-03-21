@@ -1,0 +1,34 @@
+<div class="container">
+    <h1 class="display-4 text-center">Comprar un auto</h1>
+    <label>Filtrar por año</label>
+    <select [(ngModel)]="yearValue"  aria-label=".form-select-sm ">
+        <option disabled>Selecciona el año</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>             
+    </select>
+    <button (click)="yearFilter()">Filtrar</button>
+    <button (click)="filterClear()">Limpiar</button>
+    <br> 
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <tr class="card-body" *ngFor="let car of carService.list | filter: SearchYear : SearchType " >
+            <div class="col">           
+                    <div class="card h-100 bg-dark mb-3">
+                        <img src="https://i.pinimg.com/originals/ab/e8/88/abe888fb17f610d683c940ed14fb1105.jpg" class="card-img-top" alt="...">                  
+                            <td class="card-text h1" >{{car.name}}</td>
+                            <td class="card-text">Modelo - {{car.model}}</td>
+                            <td class="card-text w-100" >Año - {{car.year}}</td>
+                            <td class="card-text w-100">Tipo - {{car.type}}</td>
+                            <td class="card-text">Kilometraje - {{car.mileage}}</td>
+                            <td class="card-text">Ciudad - {{car.city}}</td>
+                            <td class="card-text">Precio - {{car.price}}</td>                   
+                    </div> 
+            </div>
+        </tr>    
+    </div>
+</div>

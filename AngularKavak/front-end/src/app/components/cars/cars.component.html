@@ -1,0 +1,161 @@
+<div class="col-md-10">
+        <div class="text-center">
+            <h1 class="display-4 text-center">Formulario de venta</h1>
+            <br>
+            <form [formGroup] = "form" (ngSubmit) = "saveCar()">
+                <div class="row" >
+                    <div class="form-group col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-white">
+                                    <span class="input-group-addon" id="sizing-addon2"><i class="fas fa-car" [class.green-icon]="this.form.get('name').valid"></i></span>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" formControlName="name" placeholder="Nombre del auto">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-white">
+                                    <span class="input-group-addon" id="sizing-addon2"><i class="fas fa-car-side" [class.green-icon]="this.form.get('model').valid"></i></span>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" formControlName="model" placeholder="Modelo del auto">
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="form-group ">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bg-white">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="fas fa-truck-pickup" [class.green-icon]="this.form.get('brand').valid"></i></span>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" formControlName="brand" placeholder="Marca del auto">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-white">
+                                    <span class="input-group-addon" id="sizing-addon2"><i class="fas fa-calendar-day" [class.green-icon]="this.form.get('year').valid"></i></span>
+                                </div>
+                            </div>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm " formControlName="year">
+                                <option disabled>Selecciona el año</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>             
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-white">
+                                    <span class="input-group-addon" id="sizing-addon2"><i class="fas fa-car" [class.green-icon]="this.form.get('type').valid"></i></span>
+                                </div>
+                            </div>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm " formControlName="type">
+                                <option disabled>Selecciona el tipo de auto</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="Minivan">Minivan</option>
+                                <option value="Hatch Back">Hatch Back</option>
+                                <option value="Convertible">Convertible</option>
+                                <option value="Coupe">Coupe</option>
+                                <option value="Wagon">Wagon</option>
+                                <option value="Pick-Up">Pick-Up</option>                     
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="form-group col-md-12">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bg-white">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="fas fa-city" [class.green-icon]="this.form.get('city').valid"></i></span>
+                            </div>
+                        </div>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm " formControlName="city">
+                            <option disabled>Selecciona el estado</option>
+                            <option value="Aguascalientes">Aguascalientes</option>
+                            <option value="Baja California">Baja California</option>
+                            <option value="Baja California Sur">Baja California Sur</option>
+                            <option value="Campeche">Campeche</option>
+                            <option value="Chiapas">Chiapas</option>
+                            <option value="Chihuahua">Chihuahua</option>
+                            <option value="CDMX">Ciudad de México</option>
+                            <option value="Coahuila">Coahuila</option>
+                            <option value="Colima">Colima</option>
+                            <option value="Durango">Durango</option>
+                            <option value="Estado de México">Estado de México</option>
+                            <option value="Guanajuato">Guanajuato</option>
+                            <option value="Guerrero">Guerrero</option>
+                            <option value="Hidalgo">Hidalgo</option>
+                            <option value="Jalisco">Jalisco</option>
+                            <option value="Michoacán">Michoacán</option>
+                            <option value="Morelos">Morelos</option>
+                            <option value="Nayarit">Nayarit</option>
+                            <option value="Nuevo León">Nuevo León</option>
+                            <option value="Oaxaca">Oaxaca</option>
+                            <option value="Puebla">Puebla</option>
+                            <option value="Querétaro">Querétaro</option>
+                            <option value="Quintana Roo">Quintana Roo</option>
+                            <option value="San Luis Potosí">San Luis Potosí</option>
+                            <option value="Sinaloa">Sinaloa</option>
+                            <option value="Sonora">Sonora</option>
+                            <option value="Tabasco">Tabasco</option>
+                            <option value="Tamaulipas">Tamaulipas</option>
+                            <option value="Tlaxcala">Tlaxcala</option>
+                            <option value="Veracruz">Veracruz</option>
+                            <option value="Yucatán">Yucatán</option>
+                            <option value="Zacatecas">Zacatecas</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-white">
+                                    <span class="input-group-addon" id="sizing-addon2"><i class="fas fa-car" [class.green-icon]="this.form.get('price').valid"></i></span>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Precio" formControlName="price">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-white">
+                                    <span class="input-group-addon" id="sizing-addon2"><i class="fas fa-car" [class.green-icon]="this.form.get('mileage').valid"></i></span>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Kilometraje" formControlName="mileage"> 
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-group">
+                        <button class="btn btn-success btn-lg btn-block" [disabled]="form.invalid" type="submit"><i class="fas fa-database"></i> Vender mi auto</button>
+                    </div>
+                </div>         
+            </form>
+        </div>
+    </div>

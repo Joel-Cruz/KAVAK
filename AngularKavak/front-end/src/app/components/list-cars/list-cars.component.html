@@ -1,0 +1,28 @@
+<table *ngIf="apiauth.userData.role === 'admin'" class="table table-sm">
+    <th>ID&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>NAME&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>MODEL&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>BRAND&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>YEAR&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>TYPE&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>MILLEAGE&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>CITY&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>PRICE&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <tr *ngFor = "let car of carService.list">
+        <td>{{ car.id }}</td>
+        <td>{{ car.name }}</td>
+        <td>{{ car.model }}</td>
+        <td>{{ car.brand }}</td>
+        <td>{{ car.year }}</td>
+        <td>{{ car.type }}</td>
+        <td>{{ car.mileage }}</td>
+        <td>{{ car.city }}</td>
+        <td>{{ car.price }}</td>
+        <td>
+            <i class="far fa-edit fa-lg text-info" (click) = "update(car)"  style="cursor: pointer;"></i>
+        </td>
+        <td>
+            <i class="far fa-trash-alt fa-lg text-danger" (click)="deleteCar(car.id)" style="cursor: pointer;"></i>
+        </td>
+    </tr>
+</table>
