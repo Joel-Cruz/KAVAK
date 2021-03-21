@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Wero\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Wero\\.nuget\\packages"
+    ]
+  }
+}
