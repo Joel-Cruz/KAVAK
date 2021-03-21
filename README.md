@@ -32,6 +32,20 @@ _Front End
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
+_Primero te descargas la base de datos del repositorio el archivo Kavak.bacpac
+![image](https://user-images.githubusercontent.com/55564749/111925545-ee101880-8a6e-11eb-86cf-40c7d5e1b507.png)
+
+_Al darle click derecho en tus bases de datos importas la descargada
+![image](https://user-images.githubusercontent.com/55564749/111925384-4d215d80-8a6e-11eb-97c8-8e9456f212d7.png)
+![image](https://user-images.githubusercontent.com/55564749/111925412-662a0e80-8a6e-11eb-8f92-630dba47e7cf.png)
+_Para evitar errores colocale de nombre "KavakDB"
+![image](https://user-images.githubusercontent.com/55564749/111925437-81951980-8a6e-11eb-9981-565c313624fd.png)
+
+_ y listo tendras la base completa en tu local
+![image](https://user-images.githubusercontent.com/55564749/111925495-b30de500-8a6e-11eb-812f-39ab35f24282.png)
+
+
+
 _Tras clonar el repositorio tendras una carpeta 
 
 ![image](https://user-images.githubusercontent.com/55564749/111920563-50f4b600-8a55-11eb-90c3-52550ec48c21.png)
