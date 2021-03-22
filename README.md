@@ -58,8 +58,21 @@ _Empecemos con la api debemos abrir el archivo backend.sln con Visual Studio 201
 _y si tenemos instalado correctamente el sdk y las versiones de .net y entity framework al ejecutar el IIS
 ![image](https://user-images.githubusercontent.com/55564749/111921049-19d3d400-8a58-11eb-887c-3d8d13404aed.png)
 
+_solo hay que hacer un cambio en el archivo appsettings .json y para eso obtenemos el name de nuestro sql server local
+![image](https://user-images.githubusercontent.com/55564749/111926309-f9b10e80-8a71-11eb-80a2-d642a9292673.png)
+
+_y lo sustituimos en las conecction strings data source
+![image](https://user-images.githubusercontent.com/55564749/111926349-206f4500-8a72-11eb-81ec-5a520d6ba30e.png)
+
+_tambien en userService linea 28 
+![image](https://user-images.githubusercontent.com/55564749/111926666-637de800-8a73-11eb-8684-08a6690c59cd.png)
+
+
+
+
 _ Listo la api ya estara ejecutandose
 ![image](https://user-images.githubusercontent.com/55564749/111921074-33751b80-8a58-11eb-83ec-f929112eef4e.png)
+
 
 
 
