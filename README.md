@@ -66,6 +66,8 @@ _y lo sustituimos en las conecction strings data source
 
 _tambien en userService linea 28 
 ![image](https://user-images.githubusercontent.com/55564749/111926666-637de800-8a73-11eb-8684-08a6690c59cd.png)
+_tambien en ApplicationDbContext.cs linea 16
+![image](https://user-images.githubusercontent.com/55564749/116010739-85c0d380-a5e6-11eb-83a7-8594b29d3899.png)
 
 
 
